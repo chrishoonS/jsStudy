@@ -9,9 +9,9 @@ Javascript Study Repository
 
 
 ✅ commit 규칙
-commit 메세지 : [문제번호]문제이름_풀이날짜
-description: 문제 주소 (option)
-git commit -m "~~문제 풀이 완료"
+- commit 메세지 : [문제번호]문제이름_풀이날짜
+- description: 문제 주소 (option)
+- git commit -m "~~문제 풀이 완료"
 
 
 ✅ PR(Pull Request) 규칙 - 추후 논의
