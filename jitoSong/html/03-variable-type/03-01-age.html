@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<!-- HTML 문서의 문자 인코딩 방식을 명시 -->
+	<meta charset ="UTF-8">
+	<!-- 문서의 저자(author)를 정의 -->
+	<meta name="author" content="jitoSong">
+	<!-- 모든 장치에서 웹 사이트가 잘 보이도록 뷰포트(viewport)를 설정 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- 모든 IE 브라우저에 호환성보기를 무시 -->
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<title>나이 계산하기</title>
+
+	<!-- 스타일 시트(stylesheet)로 사용할 외부 리소스를 불러옴. -->
+	<link rel="stylesheet" href="../../css/age.css">
+</head>
+
+<body>	
+	<button class="btn" onclick="calc()">나이 계산하기</button>
+	<div id="result" class="show">(결과 값 표시)</div>
+
+	<script>
+		function calc() {
+	
+			//날짜 객체 선언
+			var currentDate = new Date();
+			var year = currentDate.getFullYear();	//현재 연도 가져오기
+	
+			var inputYear = prompt("Input Your Year!", "YYYY"); //입력받는 변수
+			var age = year - inputYear;
+	
+			//document.querySelector("#result").innerHTML = "Your Age is " + age;
+			document.getElementById("result").innerHTML = "Your Age is " + age;
+
+			//참고자료 : https://velog.io/@chloeee/getElementById-%EA%B7%B8%EB%A6%AC%EA%B3%A0-querySelector-%EC%B0%A8%EC%9D%B4%EC%A0%90
+		}
+	</script>
+</body>
+
+</html>
