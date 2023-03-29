@@ -3,9 +3,9 @@ showArray(numbers);
 
 var sum = 0;
 for(var i=0; i<numbers.length; i++) {
-    sum += numbers[i];
+    sum += numbers[i];  //모든 배열을 더하기
 }
-numbers.push(sum);
+numbers.push(sum); //더한 결과
 showArray(numbers);
 
 function showArray(arr) {

@@ -10,5 +10,7 @@ quotes[7] = "문제점을 찾지 말고 해결책을 찾으라.";
 quotes[8] = "착한 일은 작다 해서 아니하지 말고, 악한 일은 작다 해도 하지 말라.";
 quotes[9] = "자존심은 어리석은 자의 소유물이다";
 
-var index = Math.floor(Math.random() * 10);
+var index = Math.floor(Math.random() * 10); 
+//Math.floor: 소수점 이하를 버림한다. / Math.ceil: 소수점 이하를 올림한다. / Math.round:소수점 이하를 반올림한다.
+//Math.random: 난수 생성함수
 document.write("<p>&quot;" + quotes[index] + "&quot;</p>")
