@@ -14,11 +14,16 @@
 
 		if(inputNumber != null) {
 			if(inputNumber % 2 == 0)
+				// 웹페이지 로딩시 write안에 인자값을 출력
+				// document.write() 메소드가 실행되면, 웹 페이지 내에 먼저 로딩된 모든 데이터를 지우고 자신의 데이터를 출력
 				document.write(inputNumber + " 는 짝수 입니다.");
 			else if(inputNumber % 2 == 1)
 				document.write(inputNumber + " 는 홀수 입니다.");
 			else{
 				document.write("Error");
+				// location은 현재 Document에 대한 위치를 가지고 있는 객체
+				// location이나 window.location 또는 document.location를 통해서 접근 가능
+				// 출처 : https://7942yongdae.tistory.com/53
 				location.reload();
 			}
 		}
