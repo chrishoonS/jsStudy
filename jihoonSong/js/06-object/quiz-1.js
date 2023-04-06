@@ -1,9 +1,10 @@
+		//member 상수 객체 생성
 		const member = {
 			id   	: 123, 
 			name 	: "홍길동",
 			age  	: 25,
 			address : "서울",
-			spec : "특기는 자바스크립트 공부중"
+			spec 	: "특기는 자바스크립트 공부중"
 		};
 
 		document.write("<h2>" + member.name + "</h2>");
