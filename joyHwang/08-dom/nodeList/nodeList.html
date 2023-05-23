@@ -16,5 +16,15 @@
 				<p>도레미 <span class="del">X</span></p>
 			</div>
 	</div>
+
+	<script>
+		var delButtons = document.querySelectorAll(".del");
+		for(var i=0; i<delButtons.length; i++) { //i는 0부터 시작해서 delButtons의 length보다 작을 때까지 반복한다.
+			delButtons[i].addEventListener("click", function() { //버튼이 첫번째든 두번째든 세번째든, 클릭하면 어떠한 동작을 넣을 것이다.
+				this.parentNode.parentNode.removeChild(this.parentNode); //노드 부모의 노드 부모를 찾아서 그 자식 값을 지울 것이다.
+				//부모의 부모인 #nameList를 찾아서 그 자식인 <p>를 삭제한다!
+			}); 
+		} 
+	</script>
 </body>
 </html>
