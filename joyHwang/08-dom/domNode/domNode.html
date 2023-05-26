@@ -16,5 +16,19 @@
 		}
 	</style>
 </head>
-<body></body>
+<body>
+	<!-- <p class="accent">주문이 완료되었습니다</p> -->
+	<script>
+		var newP = document.createElement("p");
+		var newText = document.createTextNode("주문이 완료되었습니다.");
+		newP.appendChild(newText);
+
+		var newAttr = document.createAttribute("class");
+		newAttr.value = "accent";
+		newP.setAttributeNode(newAttr);
+		//newP.setAttribute("class", "accent"); 라고 더 간단하게 선언할 수 있음. 
+
+		document.body.appendChild(newP);
+	</script>
+</body>
 </html>

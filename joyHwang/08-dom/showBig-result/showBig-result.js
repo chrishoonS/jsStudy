@@ -3,10 +3,11 @@ var smallPics = document.querySelectorAll(".small");  // 작은 이미지들을 
 
 for(var i = 0; i < smallPics.length; i++) {
     smallPics[i].addEventListener("click", chagePic);   // 노드를 클릭하면 changePic 함수 실행
+    // = smallPics[i].onclick = changePic; 
 }
 
 function chagePic() {
         var newPic = this.src;   // click 이벤트가 발생한 대상의 src 속성 값 가져옴
         bigPic.setAttribute("src", newPic);  // newPic 값을 큰 이미지의 src 속성에 할당.
-        // 윗 줄을 cup.src = newPic; 로 사용해도 됨.
+        // 윗 줄을 big.src = newPic; 로 사용해도 됨.
     }	
