@@ -1,7 +1,7 @@
-function newRegister() {						
+function newRegister() {				
 	var newP = document.createElement("p");  // 새 p 요소 만들기 
 	var userName = document.querySelector("#userName");					
-	var newText = document.createTextNode(userName.value);  // 새 텍스트 노드 만들기
+	var newText = document.createTextNode(userName.value);  // 새 텍스트 노드 만들기 userName에 들어있는 value값을 가져온다!
 	newP.appendChild(newText);  // 텍스트 노드를 p 요소의 자식 요소로 연결하기
    
   var delBttn = document.createElement("span"); 	// 새 button 요소 만들기 
@@ -9,6 +9,7 @@ function newRegister() {
   delBttn.setAttribute("class", "del");  // 버튼에 class 속성 설정하기
   delBttn.appendChild(delText);  // 텍스트 노드를 button 요소의 자식 요소로 연결하기							
   newP.appendChild(delBttn);  //	del 버튼을 p 요소의 자식 요소로 		
+  // <p><span class = "del">X</span></p>
 
   var nameList = document.querySelector("#nameList");  
   nameList.insertBefore(newP, nameList.childNodes[0]);  // p 요소를 #nameList 맨 앞에 추가하기
@@ -19,8 +20,12 @@ function newRegister() {
           
   for (var i=0; i<removeBttns.length; i++) {  // removeBttns에 있는 요소 전체를 반복
     removeBttns[i].addEventListener("click", function() {  // i번째 버튼을 클릭했을 때 실행할 함수 선언
+      /* console.log(this)
+      console.log(this.parentNode)
+      console.log(this.parentNode.parentNode) */
       if (this.parentNode.parentNode)  // 현재 노드(this)의 부모 노드의 부모 노드가 있을 경우 실행
         this.parentNode.parentNode.removeChild(this.parentNode);  // ‘현재 노드(this)의 부모 노드의 부모 노드’를 찾아 ‘현재 노드(this)의 부모 노드(p 노드)’ 삭제
     });
   }	
 }		
+

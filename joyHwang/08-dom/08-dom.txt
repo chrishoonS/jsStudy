@@ -16,10 +16,21 @@ setAttribute()
 속성(Attribute)노드: HTML 태그에 있는 모든 속성
 주석(Comment)노드: 주석
 
+~노드 다루는 함수들~
 createElement() 새 요소 노드를 만든다.
 createTextNode() 텍스트 내용이 있을 경우 텍스트 노드를 만든다.
 appendChild() 텍스트 노드를 요소 노드에 자식 노드로 추가한다.
 createAttribute() 속성 노드를 만든다.
 setAttributeNode() 속성 노드를 요소 노드에 연결한다.
 appendChild() 새로 만든 요소 노드를 부모 노드에 추가한다.
+
+hasChildNodes() 자식노드를 확인한다. (있다면 true, 없다면 false)
+childNodes() 자식노드에 접근한다. 
+insertBefor() 원하는 위치에 노드를 삽입한다. 
+-->(appendChild랑 다르게 부모 노드에 자식 노드를 추가할 때 기준이 되는 노드를 지정하고 그 앞에 자식 노드를 추가할 수 있음.)
+removeChild() 특정 노드를 삭제한다. 
+-->(특정 노드를 삭제 할 때 그 노드의 부모 노드를 먼저 찾아야 하는데, 현재 부모 노드 정보를 가지고 있는 속성이 parentNode)
+
+
+
 
