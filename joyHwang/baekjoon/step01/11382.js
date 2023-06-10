@@ -1,6 +1,6 @@
 let fs = require('fs');
 //let input = fs.readFileSync('/dev/stdin').toString().split(' ');
-let input = require('fs').readFileSync('joyHwang/baekjoon/1-first/test.txt').toString().trim().split(' ').map(Number);
+let input = require('fs').readFileSync('joyHwang/baekjoon/step01/test.txt').toString().trim().split(' ').map(Number);
 
 const answer = input.reduce((a, b) => a + b); //배열.reduce((누적값, 현잿값, 인덱스, 요소) => { return 결과 }, 초깃값);
 
