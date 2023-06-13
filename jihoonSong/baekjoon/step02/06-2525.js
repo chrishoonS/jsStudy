@@ -1,10 +1,15 @@
-// 사분면 고르기
+// 오븐시계
 const fs = require('fs');
 // var input = fs.readFileSync('/dev/stdin').toString().split(' ');
 const input = fs.readFileSync('/Users/song/Desktop/jsStudy/jihoonSong/baekjoon/test.txt').toString().split('\n');
-const [x, y] = input;
+let [A, B] = input[0].split(' ').map(v => +v);
+let C = Number(input[1]);
+let hh, mm;
 
- if (x > 0)
-   console.log(y > 0 ? 1 : 4);
- else
-   console.log(y > 0 ? 2 : 3);
+//여기서부터 시작
+if(B+C >= 60){
+  console.log(A+1, B+C-60);
+
+}else{
+  console.log(A, B+C);
+}
