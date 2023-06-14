@@ -4,12 +4,12 @@ const fs = require('fs');
 const input = fs.readFileSync('/Users/song/Desktop/jsStudy/jihoonSong/baekjoon/test.txt').toString().split('\n');
 let [A, B] = input[0].split(' ').map(v => +v);
 let C = Number(input[1]);
-let hh, mm;
 
-//여기서부터 시작
-if(B+C >= 60){
-  console.log(A+1, B+C-60);
+//분 단위로 먼저 합쳐서 계산
+let result = A*60 + B + C;
+A = Math.floor(result/60);
+B = result%60;
 
-}else{
-  console.log(A, B+C);
-}
+if(A > 23) A -= 24;
+
+console.log(A, B);
