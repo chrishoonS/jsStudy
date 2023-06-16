@@ -1,6 +1,6 @@
 let fs = require('fs');
 //let input = fs.readFileSync('/dev/stdin').toString().split(' ');
-let input = require('fs').readFileSync('joyHwang/baekjoon/1-first/test.txt').toString().split('\n');
+let input = require('fs').readFileSync('joyHwang/baekjoon/step01/test.txt').toString().split('\n');
 
 
 //substring() - (문자열 자르기)로 푸는 방법
