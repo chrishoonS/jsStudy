@@ -1,6 +1,6 @@
 let fs = require('fs');
 //let input = fs.readFileSync('/dev/stdin').toString().split(' ');
-let input = require('fs').readFileSync('joyHwang/baekjoon/1-first/test.txt').toString().split('\n');
+let input = require('fs').readFileSync('joyHwang/baekjoon/step01/test.txt').toString().split('\n');
 
 let a = input[0].split('');
 let b = input[1].split('');
