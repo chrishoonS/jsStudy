@@ -1,6 +1,7 @@
 let fs = require('fs');
 // let input = fs.readFileSync('/dev/stdin').toString().split(' ');
 let input = fs.readFileSync('joyHwang/baekjoon/step02/test.txt').toString().split('\n');
+//console.log(typeof input)
 
 let curHour = parseInt(input[0].split(' ')[0]);
 let curMinute = parseInt(input[0].split(' ')[1]);
