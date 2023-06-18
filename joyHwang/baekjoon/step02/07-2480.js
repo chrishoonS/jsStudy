@@ -20,8 +20,8 @@ if ( a === b && a === c) {
     }
     
 } else {
-    largerNumber = Math.max(...numbers)
-    money = largerNumber*100
+    largerNumber = Math.max(numbers);  //Math.max() 함수는 입력값으로 받은 0개 이상의 숫자 중 가장 큰 숫자를 반환.
+    money = largerNumber*100;
 }
 
 console.log(money)
