@@ -25,3 +25,5 @@ if ( a === b && a === c) {
 }
 
 console.log(money)
+
+//수정수정
