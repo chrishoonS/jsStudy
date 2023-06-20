@@ -5,8 +5,8 @@ let input = fs.readFileSync('joyHwang/baekjoon/step02/test.txt').toString().spli
 let hour = parseInt(input[0]);
 let minute = parseInt(input[1]);
 
-if (minute - 45 < 0) { //조건 1: minute에서 45분 뺀 값이 0보다 작으면
-    hour -= 1; //hour가 빼는 값은 1이다.  왜 hour = -1이 안되지?
+if (minute < 45) { //조건 1: minute에서 45분 뺀 값이 0보다 작으면
+    hour -= 1; //hour가 빼는 값은 1이다.  
     minute = 60 + minute - 45;
 } else { //조건 2: minute에서 45분 뺀 값이 0보다 크면
     minute = minute - 45;
