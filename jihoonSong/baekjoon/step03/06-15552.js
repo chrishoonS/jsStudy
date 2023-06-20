@@ -1,4 +1,5 @@
 // 빠른 A+B
+// 로컬에서 정상적으로 작동해도 문제풀이시 메모리 부족할 수 있어서 콘솔 한번만 출력
 
 let fs = require('fs');
 // var input = fs.readFileSync('/dev/stdin').toString().split(' ');
