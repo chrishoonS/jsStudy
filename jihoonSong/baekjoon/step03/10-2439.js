@@ -1,4 +1,4 @@
-// 별찍기 - 1
+// 별찍기 - 2
 
 let fs = require('fs');
 // var input = fs.readFileSync('/dev/stdin').toString().split(' ');
