@@ -1,3 +1,4 @@
+//수정
 const input = require('fs').readFileSync('jitosong/backjoon/test.txt').toString().split(" ");
 
 const A = Number(input[0]);
