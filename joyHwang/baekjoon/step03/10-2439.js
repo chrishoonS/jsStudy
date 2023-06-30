@@ -1,3 +1,4 @@
+//별 찍기 공백
 let fs = require('fs');
 // let input = fs.readFileSync('/dev/stdin').toString();
 let input = fs.readFileSync('joyHwang/baekjoon/step03/test.txt').toString();
@@ -20,8 +21,10 @@ for(let i = 1; i <= number; i++) { //줄 반복
 //https://velog.io/@ho2yahh/%EB%B0%B1%EC%A4%80-2439.-%EB%B3%84-%EC%B0%8D%EA%B8%B0-2feat.-Javascript-node.js-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98
 
 
-/* * (number)5 (i)1 = 공백 4개
-** 4 2
-*** 3 3
-**** 2 4
-***** 1 5 */
+/* 
+    * (number)5 - (i)1 = 공백 4개
+   ** 4 2
+  *** 3 3
+ **** 2 4
+***** 1 5 
+*/

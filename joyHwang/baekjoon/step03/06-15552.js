@@ -1,3 +1,5 @@
+//빠른 A+B
+
 let fs = require('fs');
 // let input = fs.readFileSync('/dev/stdin').toString().split('\n');
 let input = fs.readFileSync('joyHwang/baekjoon/step03/test.txt').toString().split('\n');

@@ -1,3 +1,5 @@
+//A+B 마지막은 0 0 출력 안함
+
 let fs = require('fs');
 // let input = fs.readFileSync('/dev/stdin').toString().split('\n');
 let input = fs.readFileSync('joyHwang/baekjoon/step03/test.txt').toString().split('\n');
