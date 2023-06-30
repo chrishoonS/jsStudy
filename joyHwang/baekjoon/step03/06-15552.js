@@ -8,7 +8,3 @@ for(var i = 1; i <= T; i++) { //1부터 5까지 반복
     let numbers = input[i].split(' ');
     console.log(Number(numbers[0]) + Number(numbers[1])); 
 }
-
-
-
-
