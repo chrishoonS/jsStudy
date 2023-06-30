@@ -4,14 +4,9 @@ let input = fs.readFileSync('joyHwang/baekjoon/step03/test.txt').toString().spli
 
 const T = Number(input[0]);
 
-/* for(var i = 1; i <= T; i++) { //1부터 5까지 반복
-    let numbers = input[i].split(' ');
-    console.log(Number(numbers[0]) + Number(numbers[1])); 
-} */
-
-let result = '';
 for(var i=1; i <= T; i++){
     let numbers = input[i].split(' ');
-    result += (Number(numbers[0]) + Number(numbers[1])) + '\n';
+    console.log( "Case #" + String(i)+ ': ' + numbers[0] + ' + ' + numbers[1] + ' = '+ (Number(numbers[0]) + Number(numbers[1])));
 }
-console.log(result);
+
+//문제 통과는 했는데 콘솔에서 밀려서 나옴..!
