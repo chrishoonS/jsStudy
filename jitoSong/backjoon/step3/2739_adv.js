@@ -9,7 +9,7 @@
 let result = "";
 
 for (let i=1; i<10; i++) {
-    for (let j=2; j<5; j++) {
+    for (let j=2; j<5; j++) { //공통,반복
         result += j + " * " + i + " = " + j * i + "\t"
     }
     result += '\n'

@@ -13,7 +13,6 @@
 // 100
 // 2000
 
-//? 하나의 문자열에 결과값과 개행 문자를 넣어서 출력하는데 개행 문자는 왜?
 const input = require('fs').readFileSync('jitosong/backjoon/test.txt').toString().split('\n')
 
 let numberInput = Number(input[0]) //input값을 변수로 받는다.
