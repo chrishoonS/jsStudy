@@ -1,24 +1,16 @@
-//단 수 
-//곱 수
-//개행 (조건문) 5단, 7단 (5이상의 홀수, 7이상의 홀수로 판별)
-
-// \t
-/* for (let i = 2; i <=9; i++) {
-    console.log(i + '단');
-    for(let j = 1; j <=9; j++) {
-        console.log( i + '*' + j + "=" + i*j);
-    }   
-} */
-
-
-var result="";
-for (var i = 1; i < 10; i++) {
-      for (var j = 2; j < 6; j++) {
-        result += j + " X " + i + " = " + j * i + "\t";
-      }
-      result += "\n";
-      console.log(result)
+//구구단 응용
+let result="";
+for(let k = 0; k < 4; k++) { //가로로 4단씩 반복
+  for (let i = 1; i < 10; i++) {//9까지 곱해지는 수 반복
+    for (let j = 2; j < 6; j++) {//각 단 수 반복
+      result += j + " X " + i + " = " + j * i + "\t";
+    }
+    result += "\n";
+  }
+  result += "\n";
 }
+console.log(result)
+
 
 
 

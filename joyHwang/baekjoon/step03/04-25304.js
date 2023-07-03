@@ -1,3 +1,5 @@
+//구매한 물건들의 총 금액이 맞는 지(가격, 개수)
+
 let fs = require('fs');
 // let input = fs.readFileSync('/dev/stdin').toString();
 let input = fs.readFileSync('joyHwang/baekjoon/step03/test.txt').toString().split('\n') ;
