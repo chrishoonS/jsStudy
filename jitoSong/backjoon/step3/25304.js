@@ -1,11 +1,18 @@
-const input = require('fs').readFileSync('jitosong/backjoon/test.txt').toString().split('\n') //개행으로 입력 받음
-
 // 260000
 // 4
 // 20000 5
 // 30000 2
 // 10000 6
 // 5000 8
+
+// 250000
+// 4
+// 20000 5
+// 30000 2
+// 10000 6
+// 5000 8
+
+const input = require('fs').readFileSync('jitosong/backjoon/test.txt').toString().split('\n') //개행으로 입력 받음
 
 let totalPrice = Number(input[0]); //구매한 물건의 총 가격
 let itemCount = Number(input[1]); //구매한 물건의 갯수
