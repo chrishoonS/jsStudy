@@ -7,7 +7,7 @@ let number = Number(input);
 let star = '';
 let blank = '';
 
-for(let i = 1; i <= number; i++) { //쥴 반복 + 별 누적
+for(let i = 1; i <= number; i++) { // 별 누적
     star += '*';
     for(let j = 0; j < number - i; j++) { //공백 -1개씩 반복
          blank += ' ';
