@@ -24,12 +24,11 @@ console.log(result) */
 
 //백준에서 통과된 경우
 for(var i=0; i < input.length; i++){
-    let result = +input[i][0] + +input[i][2] //좌우측 입력값을 뜻한다는데 1이랑 2는 뭔 뜻..?
+    let result = +input[i][0] + +input[i][1] //배열의 첫번째와 두번째
     if(result == 0) {
         break
     }
     console.log(result);
-    console.log(input);
 }
 
 //https://rorobin.tistory.com/46

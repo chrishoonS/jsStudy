@@ -11,4 +11,3 @@ for(var i=1; i <= T; i++){
     console.log( "Case #" + String(i)+ ': ' + numbers[0] + ' + ' + numbers[1] + ' = '+ (Number(numbers[0]) + Number(numbers[1])));
 }
 
-//문제 통과는 했는데 콘솔에서 밀려서 나옴..!
