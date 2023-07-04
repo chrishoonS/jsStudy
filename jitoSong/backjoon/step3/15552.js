@@ -14,7 +14,7 @@
 // 2000
 
 const input = require('fs').readFileSync('jitosong/backjoon/test.txt').toString().split('\n')
-
+console.log(input)
 let numberInput = Number(input[0]) //input값을 변수로 받는다.
 let result = "" //출력할 변수
 
