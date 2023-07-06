@@ -7,7 +7,7 @@ let input = fs.readFileSync('joyHwang/baekjoon/step03/test.txt').toString();
 
 let string = 'int';
 
-for(let i=0; i < parseInt(input)/4; i++) { //4의 배수만큼 반복..?
-    string = 'long ' + string; //string += 'long'
+for(let i=0; i < parseInt(input)/4; i++) { //4의 배수만큼 반복
+    string = 'long ' + string; //==! string += (String +)'long'
 }
 console.log(string);
