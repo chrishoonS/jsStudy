@@ -18,7 +18,7 @@ let min = randomNum[0];
 let max = randomNum[0];
 let result = '';
 
-for(let i = 0; i < totalNum; i++) {
+for(let i = 0; i < totalNum; i++) { //*230709스터디 --- randomNum.length로 해도됨 
     if (min > randomNum[i]) { //현재 저장된 min값보다 다른 인덱스가 작으면
         min = randomNum[i] // 그 값을 저장
     }
@@ -28,3 +28,6 @@ for(let i = 0; i < totalNum; i++) {
 }
 result += `${min} ${max}`;
 console.log(result)
+
+
+/* sort() 메서드 써도 됨 */
