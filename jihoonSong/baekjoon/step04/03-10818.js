@@ -4,8 +4,24 @@
 // const [A, B] = require('fs').readFileSync('/dev/stdin').toString().split(' ').map(n => parseInt(n))
 
 const input = require('fs').readFileSync('/Users/song/Desktop/jsStudy/jihoonSong/baekjoon/test.txt').toString().trim().split('\n');
-let N = +input[0];
-let arr = input[1].split(' ').map(v => +v);
+const N = Number(input[0]);
+let arr = input[1].split(" ");
+
+for (let i = 0; i < N; i++) {
+  arr[i] = Number(arr[i]);
+}
+
+let max = arr[0];
+let min = arr[0];
+
+for (let i = 0; i < N; i++) {
+  if (max < arr[i]) max = arr[i];
+  if (min > arr[i]) min = arr[i];
+}
+
+console.log(`${min} ${max}`);
+
+/**
 
 // sort() 함수는 파라미터(compareFunction)가 입력되지 않으면, 유니코드 순서에 따라서 값을 정렬
 // [ 20, 10, 35, 30, 7 ]
@@ -28,3 +44,4 @@ console.log(arr[0] + ' ' + arr[4]);
 // 5
 // 20 10 35 30 7
 
+**/
