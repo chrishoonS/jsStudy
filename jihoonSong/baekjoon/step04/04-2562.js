@@ -5,17 +5,17 @@
 
 const input = require('fs').readFileSync('/Users/song/Desktop/jsStudy/jihoonSong/baekjoon/test.txt').toString().trim().split('\n').map(n => parseInt(n));
 
-let max = input[0];
-let maxIndex = 0;
+let maxValue = input[0];
+let maxNo = 0;
 
 for (let i = 0; i < input.length; i++) {
-  if (max < input[i]) {
-    max = input[i];
-    maxIndex = i;
+  if (maxValue < input[i]) {
+    maxValue = input[i];
+    maxNo = i;
   }
 }
 
-console.log(max + "\n" + (maxIndex + 1));
+console.log(maxValue + "\n" + (maxNo+1));
 
 // 예제입력
 // 3
