@@ -8,8 +8,8 @@
 
 let result = "";
 
-for (let i=1; i<10; i++) {
-    for (let j=2; j<5; j++) { //공통,반복
+for (let i=1; i<10; i++) { //su
+    for (let j=2; j<5; j++) { //dan
         result += j + " * " + i + " = " + j * i + "\t"
     }
     result += '\n'

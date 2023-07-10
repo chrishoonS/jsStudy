@@ -1,0 +1,6 @@
+계속/일시중지 F5
+단위실행 F10
+단계정보 F11
+단계출력 shift+F11
+다시시작 ctrl+shift+F5
+중지 shift+F5
