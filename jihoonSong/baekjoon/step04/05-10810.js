@@ -1,14 +1,12 @@
 // 공넣기
-
-// var input = fs.readFileSync('/dev/stdin').toString().split(' ');
 // const [A, B] = require('fs').readFileSync('/dev/stdin').toString().split(' ').map(n => parseInt(n))
 
 // 입력 
 // 5 4
-// 1 2 3
+// 1 2 3 1~2 3번공
 // 3 4 4
-// 1 4 1
-// 2 2 2
+// 1 4 1 
+// 2 2 2 2~2 2번공
 
 // 출력
 // 1 2 1 1 0
