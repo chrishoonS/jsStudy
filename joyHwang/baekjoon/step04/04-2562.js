@@ -26,13 +26,19 @@ let maxNum = input[0]; //최댓값을 0번째 인덱스로 변수에 담아두�
 let maxIdx = 0;
 
 for(let i = 0; i < input.length; i++) {  
-        if(maxNum < input[i]) { //i번째 인덱스 값이 앞에 저장된 최댓값보다 크면
-        maxNum = input[i]; //그 값을 최댓값으로 저장
-        maxIdx = i + 1;
-        // maxIdx = i;
+    if(maxNum < input[i]) { //i번째 인덱스 값이 앞에 저장된 최댓값보다 크면
+    maxNum = input[i]; //그 값을 최댓값으로 저장
+    // maxIdx = i;     
+    maxIdx = i + 1;     
     }
+    // else {
+    //     console.log('if문 타지 않음')
+    //     console.log(maxNum)
+    //     console.log(maxIdx)
+    // }
+    
 }
 console.log(maxNum)
-// // console.log(maxIdx + 1)
+// console.log(maxIdx + 1)
 console.log(maxIdx)
 
