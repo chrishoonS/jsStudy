@@ -18,6 +18,6 @@ let numberInput = Number(input[0]) //input값을 변수로 받는다.
 // let result = "" //출력할 변수
 
 for (let i=1; i<=numberInput; i++) { //0번째는 두 수가 아니기 때문에 무시
-    let num = input[i].split(' ')
+    let num = input[i].split(' ') //split을 사용하고 배열로 변환
     console.log( `Case #${i}: ${Number(num[0]) + Number(num[1])}` ) 
 }
