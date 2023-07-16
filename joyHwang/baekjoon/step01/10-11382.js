@@ -31,7 +31,7 @@ const str = 'The quick brown fox jumps over the lazy dog.';
 
 const words = str.split(' ');
 console.log(words[3]);
-// Expected output: "fox" 공백별 구분
+// Expected output: "fox" 단어별 구분
 
 const chars = str.split('');
 console.log(chars[8]);
