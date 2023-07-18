@@ -44,7 +44,7 @@ let input = fs.readFileSync('joyHwang/baekjoon/step04/test.txt').toString().spli
 let answerArr = ""; //정답을 담을 배열은 빈 값으로
 
 for(let i = 0; i < 30; i++) {//출석번호 30개를 반복문으로 돌린다. 0~29
-    if(input.indexOf(i + 1) < 0) { //각 출석번호 + 1이 0보다 작을 때를 찾는다. 즉, 예제에 없는 수를 찾는다. 없으면 0보다 작기 때문(?) 
+    if(input.indexOf(i + 1) < 0) { //각 출석번호 + 1이 0보다 작을 때를 찾는다. 즉, 예제에 없는 수를 찾는다. 없으면 0보다 작기 때문. 없는 값이라(?) 
         answerArr += i + 1 + "\n"; //scope를 0부터 시작했으니 i 값에 +1을 해야 출석번호가 나올 것
     }
 }
