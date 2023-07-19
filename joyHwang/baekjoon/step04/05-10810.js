@@ -16,12 +16,14 @@ let input = fs.readFileSync('joyHwang/baekjoon/step04/test.txt').toString().spli
 const n = Number(input[0].split(" ")[0]);  //바구니 개수 변수 저장, 숫자로 변환 5
 const m = Number(input[0].split(" ")[1]);  //넣을 횟수 변수 저장, 숫자로 변환 4
 
+//const [n, m] = Number(input[0].split(" ")) [5, 4]
+
 let basket = new Array(n).fill(0);
 //배열을 만들어서 0으로 채워둔다. -- new 연산자 + Array 생성자 함수 + fill(0) 내장함수 사용하여 'n개의 element가 존재하는 Array를 만들고, 각 element에는 0이 담겨있다.'
 
  for(let i = 1; i <= m; i ++) { //공을 m번까지 넣는다. 0이 아닌 1번 인덱스부터 시작, 4번 반복!
     console.log(m)
-    const a = input[i].split(" ").map(Number) //input 배열을 공백으로 구분해서 숫자로 변환  [ 5, 4 ] [ 1, 2, 3 ] [ 3, 4, 4 ] [ 1, 4, 1 ]
+    const a = input[i].split(" ").map(Number) //input 배열을 공백으로 구분해서 숫자로 변환  [ 1, 2, 3 ] [ 3, 4, 4 ] [ 1, 4, 1 ]
     console.log(a)
     
     const start = a[0];//i번 바구니
@@ -30,10 +32,13 @@ let basket = new Array(n).fill(0);
     
     const ballNum = a[2];//K번 번호
 
+    //const [i, j, k] = input[i].split(" ").map(Number) [1, 2, 3]
+
     for(let j = start - 1; j < end; j++) {
     //Array에 0으로 채워져있어서 0부터 시작하기에 start-1번째 바구니에 공이 들어가도록 한다.
     //end번째 바구니까지 공을 넣는다.
-    basket[j] = ballNum;  // start부터 end까지 반복문으로 basket[j]에 공 넣기.... ???
+      basket[j] = ballNum;  // start부터 end까지 반복문으로 basket[j]에 공 넣기.
+      console.log(basket)
     }     
  }
  console.log(basket.join(" "));
