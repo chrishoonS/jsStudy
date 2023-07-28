@@ -14,7 +14,7 @@ let input = fs.readFileSync('joyHwang/baekjoon/step04/test.txt').toString().spli
 
 const n = Number(input[0].split(" ")[0]); //바구니 개수 변수 저장, 숫자로 변환 5
 const m = Number(input[0].split(" ")[1]); //넣을 횟수 변수 저장, 숫자로 변환 4
-//const [n, m] = Number(input[0].split(" ")) [5, 4]
+//const [n, m] = input[0].split(" ").map(Number) [5, 4]
 
 let basket = new Array(n).fill(1); //배열을 만들어서 1로 채워둔다. (공이 1개씩 들어있기 때문)
 
