@@ -14,16 +14,39 @@ let input = fs.readFileSync('joyHwang/baekjoon/step04/test.txt').toString().spli
 
 const n = Number(input[0].split(" ")[0]); //바구니 개수 변수 저장, 숫자로 변환 5
 const m = Number(input[0].split(" ")[1]); //넣을 횟수 변수 저장, 숫자로 변환 4
-//const [n, m] = input[0].split(" ").map(Number) [5, 4]
+//const [n, m] = Number(input[0].split(" ")) [5, 4]
+const basket = [];
 
-let basket = new Array(n).fill(1); //배열을 만들어서 1로 채워둔다. (공이 1개씩 들어있기 때문)
-
-for(let i = 1; i <= m; i++) {
-    let [x, y] = input[i].split(" ").map(Number);//input 배열을 공백으로 구분해서 숫자로 변환 [ 1, 2 ] [ 3, 4 ] [ 1, 4 ] [ 2, 2 ]
-
-    
-    
+/* for (let i = 0; i < n; i++) {
+    basket.push(i+1); //1을 넣는 이유는 초기에 공이 1개씩 들어있기 때문
+    console.log(basket)
+} */
+for (let i = 1; i <= n; i++) {//1부터 시작하는 이유는 초기에 공이 1개씩 들어있기 때문
+    basket.push(i); 
+    console.log(basket)
+    //처음에는 바구니에 적혀있는 번호와 같은 번호가 적힌 공이 들어있다.
 }
+
+/* for (let i = 0; i < m; i++) {
+    const [I, J] = input[i+1].trim().split(' ').map(x => parseInt(x));//1번째 인덱스부터 배열에 넣어져야 해서 +1 해주기
+    console.log(i)
+    console.log(I, J)
+    let temp = basket[I-1];
+    basket[I-1] = basket[J-1];
+    basket[J-1] = temp;
+} */
+
+for (let i = 1; i <= m; i++) {
+    const [I, J] = input[i].trim().split(' ').map(x => parseInt(x));
+    console.log(i)
+    console.log(I, J)
+    let temp = basket[I-1];
+    basket[I-1] = basket[J-1];
+    basket[J-1] = temp;
+}
+console.log(basket.join(' '));
+
+
 
 //배열 바꾸기
 // let fruits = ["Apple", "Banana", "Orange", "Mango"];
