@@ -16,7 +16,7 @@ let input = fs.readFileSync('joyHwang/baekjoon/step04/test.txt').toString().spli
 const n = Number(input[0].split(" ")[0]);  //바구니 개수 변수 저장, 숫자로 변환 5
 const m = Number(input[0].split(" ")[1]);  //넣을 횟수 변수 저장, 숫자로 변환 4
 
-//const [n, m] = Number(input[0].split(" ")) [5, 4]
+//const [n, m] = [0].split(" ").map(Number) [5, 4]
 
 let basket = new Array(n).fill(0);
 //배열을 만들어서 0으로 채워둔다. -- new 연산자 + Array 생성자 함수 + fill(0) 내장함수 사용하여 'n개의 element가 존재하는 Array를 만들고, 각 element에는 0이 담겨있다.'
