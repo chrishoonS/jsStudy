@@ -3,10 +3,11 @@
 // var input = fs.readFileSync('/dev/stdin').toString().split(' ');
 // const [A, B] = require('fs').readFileSync('/dev/stdin').toString().split(' ').map(n => parseInt(n))
 
-const input = require('fs').readFileSync('/Users/song/Desktop/jsStudy/jihoonSong/baekjoon/test.txt').toString().trim().split('\n');
-const N = Number(input[0]);
-let arr = input[1].split(" ");
+// 예제입력
+// 5
+// 20 10 35 30 7
 
+const input = require('fs').readFileSync('/Users/song/Desktop/jsStudy/jihoonSong/baekjoon/test.txt').toString().trim().split('\n');
 for (let i = 0; i < N; i++) {
   arr[i] = Number(arr[i]);
 }
@@ -39,9 +40,5 @@ arr.sort(function(a, b)  {
 });
 
 console.log(arr[0] + ' ' + arr[4]);
-
-// 예제입력
-// 5
-// 20 10 35 30 7
 
 **/
