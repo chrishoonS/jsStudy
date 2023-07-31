@@ -19,6 +19,7 @@ const input = require('fs').readFileSync('jitosong/backjoon/test.txt').toString(
 // console.log(input) //[ '11', '1 4 1 2 4 2 4 2 3 4 4', '2' ]
 
     let BefNums = input[1].split(' ') // ['1 4 1 2 4 2 4 2 3 4 4']
+    console.log(BefNums)
     let AftNums = BefNums.map(Number) //[1, 4, 1, 2, 4, 2, 4, 2, 3, 4, 4] => map()을 사용하여 string 배열을 숫자 배열로 바꾼다.
     let findNum = input[2]
 
