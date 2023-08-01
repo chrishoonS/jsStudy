@@ -9,7 +9,7 @@
             "request": "launch", //실행구성의 요청유형
             "name": "JS Debugging", //디버그 런치 이름
             // "url": "http://localhost:8080",
-            "program": "${workspaceFolder}/jihoonSong/baekjoon/step03/12-10951.js"
+            "program": "${workspaceFolder}/jitoSong/baekjoon/step4/4_2562.js"
 
         }
     ]
