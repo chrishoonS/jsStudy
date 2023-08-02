@@ -31,6 +31,7 @@ console.log(restArr.length);//그 길이를 출력 */
 //방법2  오답임 ㅠㅠ
 let restArr = [];
 for(let i = 0; i < input.length; i++) { //input의 길이만큼 반복문을 돌린다.
+    console.log(i)
     const restNum = input[i] % 42; //restNum 변수 안에 input 입력 값에서 42를 나눈 값을 저장한다.
     console.log(restNum)
     if(restArr.indexOf(restNum) === -1) { //indexOf 함수로 restArr 배열 안에 restNum을 찾아 없다면(-1이라면), restArr 배열에 넣는다.
