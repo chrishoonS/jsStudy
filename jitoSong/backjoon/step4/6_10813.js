@@ -13,3 +13,31 @@
 
 const input = require('fs').readFileSync('jitosong/backjoon/test.txt').toString().split('\n')
 
+let [n,m] = input[0].split(" ").map(Number) //[5,4] 첫째줄: 5개의 바구니와 총 4번 공을 바꿀 것이다.
+
+let basket = []
+
+for (let i=1; i<=n; i++) { //바구니 n개만큼 반복, 1 2 3 4 5를 0 1 2 3 4 배열 인덱스에 담는다.
+    basket.push(i) //n개만큼 바구니 생성, 바구니에 적혀있는 번호와 같은 번호가 적힌 공이 들어있다.
+}
+//console.log(basket)
+
+// 공을 교환할 방법 둘째줄: 1 2 => 1번 바구니와 2번 바구니에 들어있는 공을 교환한다.
+for (let i=1; i<=m; i++) { //m(1~4)번만큼 공을 교환하게 된다.
+    let numArr = input[i].split(" ").map(Number) //[ 1, 2 ] [ 3, 4 ] [ 1, 4 ] [ 2, 2 ]
+    // console.log(numArr)
+    // console.log(numArr[0]) //1 3 1 2
+    // console.log(numArr[1]) //2 4 4 2
+    let first = numArr[0]-1 //배열 요소값이 아니라 배열의 인덱스로 접근해야하므로 -1
+//    console.log("###"+first)
+    let second = numArr[1]-1 //배열 요소값이 아니라 배열의 인덱스로 접근해야하므로 -1
+    // console.log("$$$"+second)
+
+    //1번째 요소와 그 다음
+    let temp = basket[first]
+    basket[first] = basket[second]
+    basket[second] = temp
+
+    // console.log(numArr)                                                                                               
+}
+console.log(basket.join(' ')) //배열 요소를 문자열로 합치기

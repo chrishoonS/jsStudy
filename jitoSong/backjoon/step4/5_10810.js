@@ -18,3 +18,18 @@
 // 1번 바구니 ~ N번 바구니에 들어있는 공의 번호를 공백으로 구분해 출력한다. 공이 들어있지 않은 바구니는 0을 출력한다.
 
 const input = require('fs').readFileSync('jitosong/backjoon/test.txt').toString().split('\n')
+let [n,m] = input[0].split(" ").map(Number)
+
+let basket = []
+
+for (let i=1; i<n; i++) { //바구니 4개 생성
+    basket.push(i)
+}
+console.log(basket)
+
+for (let i=1; i<m; i++) {
+    const [I, J] = input[i].split(" ").map(Number)
+
+
+}
+console.log(basket.join(' '))
