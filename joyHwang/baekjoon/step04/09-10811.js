@@ -30,14 +30,14 @@ for(let i = 1; i <= m; i++) {
     let [a, b] = input[i].split(' ').map(Number);
     //console.log([a, b]) [ 1, 2 ] [ 3, 4 ] [ 1, 4 ] [ 2, 2 ]
     let tmpArr = [];
-    for(let j = a-1; j < b; j++) { //왜 -1? index를 의미하나? 
-        //console.log(j) 0 1 / 2 3 / 0 1 2 3 / 1
+    for(let j = a-1; j < b; j++) { //-1은 0번째 index부터이기 때문
         tmpArr.push(basket[j]); 
         //console.log(basket)  [ 1, 2, 3, 4, 5 ] [ 1, 2, 3, 4, 5 ] [ 2, 1, 3, 4, 5 ] [ 2, 1, 3, 4, 5 ] [ 2, 1, 4, 3, 5 ] [ 2, 1, 4, 3, 5 ] [ 2, 1, 4, 3, 5 ] [ 2, 1, 4, 3, 5 ] [ 3, 4, 1, 2, 5 ]
     };
     tmpArr.reverse();
     console.log(tmpArr)
     basket.splice(a-1, b-a+1, ...tmpArr);
+    //b-a+1 총개수 구하기 위해
 }
 console.log(basket.join(' '))
 
