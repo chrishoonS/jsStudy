@@ -9,21 +9,14 @@
 // 출력
 // 첫째 줄에, 42로 나누었을 때, 서로 다른 나머지가 몇 개 있는지 출력한다.
 
-const input = require('fs').readFileSync('jitosong/backjoon/test.txt').toString().split('\n')
+const input = require('fs').readFileSync('jitosong/backjoon/test.txt').toString().trim().split('\n')
 
-let arr = input.map(Number) //숫자 배열
-let newArr = [] //새로운 배열
-
-for (let i=0; i<arr.length; i++) {
-    newArr.push(arr[i]%42) //배열의 요소들을 각각 42로 나눈 나머지값
-    // console.log(newArr.push(arr[i]%42)) //2 4 6 8 10 12 14 16 18 20
-                                           //0 1 2 3  4  5  6  7  8  9
-                                           //42 84 252 420 840 126 42 84 420 126
-                                           // 0  1  2   3   4   5   6  7  8  9
-
-}
-
-// filter(): 특정 조건을 만족하는 새로운 배열을 필요로 할 때 사용하는 편. 배열 안에 중복된 숫자들을 제거.
-// 파라미터로 val, idx를 받아서 indexOf()를 통해 가장 첫 번째 요소와 인덱스가 같지 않을 때 제거.
-let result = newArr.filter((val, idx) => newArr.indexOf(val) === idx)
-console.log(result.length)
+//1) Set 객체를 이용한 배열의 중복값 제거
+//2) map 메서드를 이용해 입력값을 나머지값으로 바꾼다. 중복 값을 제거한 후 길이 반환
+// map()은 모든 배열의 값에 Function을 실행하는 메서드이다.
+// map()을 사용하여 42 84 252 420 840 126 42 84 420 126 => 42로 나눈 나머지 값들을 배열로 저장
+// Set으로 중복된 값들은 제거하고 배열 재정리
+// Set(0) {}
+// const cal = input.map(x => x%42) //[39, 40, 41, 0, 1, 2, 40, 41, 0, 1]
+const cal = new Set(input.map(x => x%42)).size //Set 객체가 가진 원소의 수를 나타내는 정수
+console.log(cal)
