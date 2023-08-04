@@ -9,8 +9,8 @@ let secondNum = input[1]; //1
 // console.log(secondNum)
 let sum = 0;
 
-for (let i = 0; i < firstNum; i++) { //num: 숫자의 개수만큼 반복
-    sum += Number(secondNum[i]); //sum 변수에 두 번째 숫자를 넣고 더하여 저장
+for (let i = 0; i < firstNum; i++) { //num: 숫자의 개수
+    sum += Number(secondNum[i]); //secondNum: 숫자 N개, sum 변수에 두 번째 숫자를 넣고 더하여 저장
 }
 
 console.log(sum);

@@ -14,7 +14,7 @@ const input = require('fs').readFileSync('jitosong/backjoon/test.txt').toString(
 let arr = ""
 
 for (i=0; i<30; i++) { //0~29
-    if (input.indexOf(i+1) == -1) { //(1~30)의 문자열이 어느 index에 위치하는지를 찾게 되고 0보다 작을 경우에 배열에 저장, 0보다 작다는 것은 없는 것을 의미, 그렇다면 입력받은 값 중에 없는 값들이 남을 것이다.
+    if (input.indexOf(i+1) == -1) { //(1~30)의 문자열이 어느 index에 위치하는지를 찾게 되고 -1인 경우 배열에 저장, -1인 것은 없는 것을 의미, 그렇다면 입력받은 값 중에 없는 값들이 남을 것이다.
         arr += i + 1 + "\n"
     }
 }
