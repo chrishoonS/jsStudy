@@ -23,7 +23,8 @@ const basket = [];
 } */
 for (let i = 1; i <= n; i++) {//1부터 시작하는 이유는 초기에 공이 1개씩 들어있기 때문
     basket.push(i); 
-    console.log(basket)
+    //console.log(basket)
+    //[ 1 ][ 1, 2 ][ 1, 2, 3 ][ 1, 2, 3, 4 ][ 1, 2, 3, 4, 5 ]
     //처음에는 바구니에 적혀있는 번호와 같은 번호가 적힌 공이 들어있다.
 }
 
@@ -37,12 +38,13 @@ for (let i = 1; i <= n; i++) {//1부터 시작하는 이유는 초기에 공이 
 } */
 
 for (let i = 1; i <= m; i++) {
-    const [I, J] = input[i].trim().split(' ').map(x => parseInt(x));
-    console.log(i)
-    console.log(I, J)
-    let temp = basket[I-1];
-    basket[I-1] = basket[J-1];
+    const [I, J] = input[i].trim().split(' ').map(x => parseInt(x)); //I번 바구니 J번 바구니
+    //------
+    let temp = basket[I-1]; //basket배열 요소값이 아니라 배열의 인덱스로 접근해야하므로 -1
+    basket[I-1] = basket[J-1];//basket배열 요소값이 아니라 배열의 인덱스로 접근해야하므로 -1
     basket[J-1] = temp;
+    console.log('I' + basket[I-1]);
+    console.log(basket[J-1] );
 }
 console.log(basket.join(' '));
 
