@@ -29,13 +29,8 @@ for ( let i = 1; i <= M; i++ ) {
     };
     console.log("tmpArr", tmpArr)
 
-<<<<<<< HEAD
     tmpArr.reverse();
-    console.log("reverse tmpArr", tmpArr)
-=======
-    tmpArr.reverse(); // [2,1]
     // console.log("reverse tmpArr", tmpArr)
->>>>>>> 74d9a384f14490223f44eca8e287a9520a68a269
 
     // splice : 배열로 부터 특정 범위를 삭제하거나 새로운 값을 추가 또는 기존 값을 대체
     // splice(시작 인덱스(index), 삭제할 값의 개수, 추가할 값을 가변 인자로 넘길 수 있으며, 삭제된 값을 담고 있는 배열을 반환
