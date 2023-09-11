@@ -20,3 +20,6 @@ const num = parseInt(input[1]); //3 number
 console.log(word[num-1]) // 3번째면 사실 상 2번째 index값이기 때문에 -1
 
 
+//charAt() 함수 (문자열 함수)
+// const [S, i] = require('fs').readFileSync('/Users/song/Desktop/jsStudy/jihoonSong/baekjoon/test.txt').toString().trim().split('\n');
+// console.log(S.charAt(i-1));
