@@ -21,7 +21,7 @@ let phone = {
     7: "PQRS",
     8: "TUV",
     9: "WXYZ",
-}; //다이얼 번호: 알파벳 문자열로 배열 만들어 두기
+}; //다이얼 번호: 알파벳 문자열로 객체 만들어 두기
 
 let count = 0;
 
@@ -34,3 +34,6 @@ for(let i = 0; i < input.length; i++) { //[ 'W', 'A' ]
 }
 
 console.log(count)
+
+
+//switch() case 
