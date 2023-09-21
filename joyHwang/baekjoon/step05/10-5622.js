@@ -34,3 +34,6 @@ for(let i = 0; i < input.length; i++) { //[ 'W', 'A' ]
 }
 
 console.log(count)
+
+
+//switch() case 

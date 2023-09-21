@@ -23,14 +23,16 @@ for (let i = 0; i < testCase; i++) {//테스트 케이스만큼 반복문을 돌
     let answer = '';
     
     const [num, str] = input[i].split(" "); //[ '3', 'ABC' ] [ '5', '/HTP' ]
-    console.log(str.length)//4 4 왜..?
+    console.log(num, str)
+    // console.log(str.length)
 
     for (let j = 0; j < str.length; j++) {//문자열의 길이만큼 돌릴 것 (얼마나?-밑에 참고)
+        console.log(str.length)
         for (let k = 0; k < num; k++) {//num만큼 
             answer += str[j];//str의 (반복되는)index들 
         }
     }
-    // console.log(answer)
+    console.log(answer)
 }
 
 

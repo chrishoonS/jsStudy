@@ -17,5 +17,5 @@ for (i = 97; i <= 122; i++) {//알파벳만큼 반복 a=97, z=122
 }
 console.log(result.join(' '));
 
-//indexOf: 값이 있다면 그 값의 index를, 없다면 -1을 출력하는 메서드! (복습)
-//String.fromCharCode: 숫자(i)에서 알파벳 문자를 생성하는 메서드 -- 더 찾아보기
+//indexOf: 값이 있다면 그 값의 index를, 없다면 -1을 출력하는 메서드!
+//String.fromCharCode: 숫자(i)에서 알파벳 문자를 생성하는 메서드 
