@@ -14,4 +14,3 @@ console.log(result.trim())
 //         var s = e.split('');
 //         return s[0] + s[s.length - 1];
 //     }).join('\n'));
-  

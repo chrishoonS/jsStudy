@@ -10,5 +10,6 @@
 // }
 // console.log(result);
 
+//새로운 풀이
 let lines = require('fs').readFileSync('/Users/song/Desktop/jsStudy/jihoonSong/baekjoon/test.txt').toString().trim().split('\n');
 console.log(lines[1].split('').reduce(function(acc, a) { return acc + (+a); }, 0));
