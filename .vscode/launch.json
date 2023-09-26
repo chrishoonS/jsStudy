@@ -10,7 +10,7 @@
             "name": "JS Debugging", //디버그 런치 이름
             // "url": "http://localhost:8080",
             // "program": "${workspaceFolder}/jitoSong/baekjoon/step4/4_2562.js"
-            "program": "${workspaceFolder}/jihoonSong/baekjoon/step05/09-2908.js"
+            "program": "${workspaceFolder}/joyHwang/baekjoon/step05/07-2675.js"
         }
     ]
 }
