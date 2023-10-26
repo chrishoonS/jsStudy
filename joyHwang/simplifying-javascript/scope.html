@@ -1,0 +1,25 @@
+<!doctype html>
+
+<html lang="ko">
+    <body>
+        <ul style="cursor:pointer">
+            <li> 클릭하면 0 </li>
+            <li> 클릭하면 1 </li>
+            <li> 클릭하면 2 </li>
+        </ul>
+    </body>
+    <script>
+        const items = document.querySelectorAll('li');
+        for(let i = 0; i< items.length; i++) { 
+            //let이면 i(0, 1, 2)값이 for문 안에서만 유효, var는 for문 밖에서도 유효함. 
+            //반복문 돌면서 ++로 3까지 돔.(조건이 충족되지 않은 값까지 나옴) i 메모리에는 마지막 값 3이 저장되어있음.
+            //var로 선언되어서 for문 밖에서도 유효해서 3을 가진 채로 호출이 됨
+            alert(i); //0 1 2
+            items[i].addEventListener('click', () => {
+                alert(i);
+            })
+        };
+        
+    </script>
+</html>
+
