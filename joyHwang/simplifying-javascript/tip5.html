@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  연습
+</body>
+
+</html>
+
+<script>
+  //loop
+  const game1 = {
+    player: 'Jim Jonas',
+    hits: 2,
+    runs: 1,
+    errors: 0,
+  };
+
+  const game2 = {
+    player: 'Jim Jonas',
+    hits: 3,
+    runs: 0,
+    errors: 1,
+  };
+
+  const total = {};
+
+  const stats = Object.keys(game1); //game1의 key값들만 배열에 담아서 반환. stats = ['player', 'hits', 'runs', 'errors']
+  for (let i = 0; i < stats.length; i++) {
+    const stat = stats[i];
+    if (stat !== 'player') {//stats의 i번째 요소가 'player'가 아닐 때
+      total[stat] = game1[stat] + game2[stat]; //합산한다. 근데 왜 value들만 알아서 합산되지..? 
+    }
+  }
+
+  // {
+  //   hits: 5,
+  //   runs: 1,
+  //   errors: 1
+  // }
+
+
+  //pair
+  // const dogPair = [
+  //   ['name', 'Don'],
+  //   ['color', 'black'],
+  // ];
+  // //2차원 배열 (배열 안에 배열)
+
+  // function getName(dogPair) {
+  //   return dogPair.find(attribute => { //attribute는 임시 변수 
+  //     return attribute[0] === 'name'; //['name', 'Don'] = DON
+  //   })[1]; //O
+  // }
+</script>
