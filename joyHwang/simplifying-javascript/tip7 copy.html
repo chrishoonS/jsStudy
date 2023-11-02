@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  연습
+</body>
+
+</html>
+
+<script>
+
+  /* 1 */
+  // function removeItem(items, removable) {
+  //   const updated = [];
+  //   for (let i = 0; i < items.length; i++) {
+  //     if (items[i] !== removable) {
+  //       updated.push(items[i]);
+  //     }
+  //   }
+  //   return updated;
+  // }
+
+
+  /* 2 */
+  const books = ['practical vim', 'moby dick', 'the dark tower'];
+  const recent = removeItem(books, 'moby dick');
+  const novels = removeItem(books, 'practical vim');  
+
+  // function removeItem(items, removable) {
+  //   if (items.includes(removable)) {
+  //     const index = items.indexOf(removable);
+  //     items.splice(index, 1); //(몇 index 요소 1개만 삭제)
+  //   }
+  //   return items;
+  // }
+  // //removeItem() 메소드에 키 이름을 파라미터로 전달하면 스토리지에서 해당 키를 삭제합니다.
+  // console.log(novels) //['the dark tower'];
+  // console.log(books) //['the dark tower'];
+
+
+  /* 3 */
+  // function removeItem(items, removable) {
+  //   if (items.includes(removable)) {
+  //     const index = items.indexOf(removable);
+  //     return items.slice(0, index).concat(items.slice(index + 1));
+  //   }
+  //   return items;
+  // }
+
+  // console.log(recent); //['practical vim', 'the dark tower'];
+  // console.log(novels); //['moby dick', 'the dark tower'];
+  // console.log(books) //['practical vim', 'moby dick', 'the dark tower'];
+  //slice()로 인수의 시작점부터 끝점까지 제거, concat()로 문자열을 다시 연결
+
+
+  /* 4 펼침연산자 */
+  function removeItem(items, removable) {
+    if (items.includes(removable)) {
+      const index = items.indexOf(removable);
+      return [...items.slice(0, index), ...items.slice(index + 1)];
+    }
+    return items;
+  }
+  console.log(recent)
+  console.log(novels)  
+  console.log(books)
+
+</script>
