@@ -32,16 +32,16 @@
   const recent = removeItem(books, 'moby dick');
   const novels = removeItem(books, 'practical vim');  
 
-  // function removeItem(items, removable) {
-  //   if (items.includes(removable)) {
-  //     const index = items.indexOf(removable);
-  //     items.splice(index, 1); //(몇 index 요소 1개만 삭제)
-  //   }
-  //   return items;
-  // }
-  // //removeItem() 메소드에 키 이름을 파라미터로 전달하면 스토리지에서 해당 키를 삭제합니다.
-  // console.log(novels) //['the dark tower'];
-  // console.log(books) //['the dark tower'];
+  function removeItem(items, removable) {
+    if (items.includes(removable)) {
+      const index = items.indexOf(removable);
+      items.splice(index, 1); //(몇 index 요소 1개만 삭제)
+    }
+    return items;
+  }
+  //removeItem() 메소드에 키 이름을 파라미터로 전달하면 스토리지에서 해당 키를 삭제합니다.
+  console.log(novels) //['the dark tower'];
+  console.log(books) //['the dark tower'];
 
 
   /* 3 */
@@ -60,13 +60,13 @@
 
 
   /* 4 펼침연산자 */
-  function removeItem(items, removable) {
-    if (items.includes(removable)) {
-      const index = items.indexOf(removable);
-      return [...items.slice(0, index), ...items.slice(index + 1)];
-    }
-    return items;
-  }
+  // function removeItem(items, removable) {
+  //   if (items.includes(removable)) {
+  //     const index = items.indexOf(removable);
+  //     return [...items.slice(0, index), ...items.slice(index + 1)];
+  //   }
+  //   return items;
+  // }
   console.log(recent)
   console.log(novels)  
   console.log(books)
