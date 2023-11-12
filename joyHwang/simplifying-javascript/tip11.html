@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  연습
+</body>
+
+</html>
+
+<script>
+  // const defaults = {
+  //   author: '',
+  //   title: '',
+  //   year: 2017,
+  //   rating: null,
+  // };
+
+  // const book = {
+  //   author: 'Joe Morgan',
+  //   title: 'Simplifying JavaScript',
+  // };
+
+  // function addBookDefaults(book, defaults) {
+
+  //   const fields = Object.keys(defaults); //['author', 'title', 'year', 'rating']
+  //   console.log(fields)
+  //   const updated = {};
+  //   for (let i = 0; i < fields.length; i++) {
+  //     const field = fields[i];
+  //     updated[field] = book[field] || defaults[field];
+  //   }
+  //   return updated;
+  // }
+  // addBookDefaults(book, defaults)
+
+  const defaults = {
+    author: '',
+    title: '',
+    year: 2017,
+    rating: null,
+  };
+
+  const book = {
+    author: 'Joe Morgan',
+    title: 'Simplifying JavaScript',
+  };
+
+  const updated = Object.assign({}, defaults, book);
+  console.log(updated)
+</script>
