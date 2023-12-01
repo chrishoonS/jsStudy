@@ -1,0 +1,19 @@
+body {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+  }
+  h1 {
+    color: #fff;
+  }
+  
+  .bg-yellow {
+    background-color: #ffd700;
+  }
+  .bg-purple {
+    background-color: #9370db;
+  }
+  .bg-blue {
+    background-color: #00bfff;
+  }
+  
