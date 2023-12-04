@@ -17,13 +17,13 @@ function paintGreeting(username) {
   greeting.innerText = `Hello ${username}`;
   greeting.classList.remove(HIDDEN_CLASSNAME);
 }
-const saveUsername = localStorage.getItem("UNSERNAME_KEY");
+const savedUsername = localStorage.getItem("UNSERNAME_KEY");
 
-if(saveUsername === null) {
+if(savedUsername === null) {
   //show the form
   loginForm.classList.remove(HIDDEN_CLASSNAME);
   loginForm.addEventListener("submit", onLoginSubmit)
 } else {
   //show the h1
-  paintGreeting(saveUsername)
+  paintGreeting(savedUsername)
 }
