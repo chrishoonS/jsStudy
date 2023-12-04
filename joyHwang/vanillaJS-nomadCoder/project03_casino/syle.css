@@ -3,9 +3,18 @@
 }
 body {
   font-family: 'Times New Roman', Times, serif;
-  line-height:1.5;
   font-size: 18px;
 }
-.range {
+.form__box{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.range-text {
+  font-weight: bold;
+  font-size: 20px;
+}
+.result {
   font-weight: bold;
 }
