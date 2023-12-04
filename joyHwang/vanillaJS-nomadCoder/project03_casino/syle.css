@@ -1,0 +1,20 @@
+.hidden {
+  display: none;
+}
+body {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+}
+.form__box{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.range-text {
+  font-weight: bold;
+  font-size: 20px;
+}
+.result {
+  font-weight: bold;
+}
