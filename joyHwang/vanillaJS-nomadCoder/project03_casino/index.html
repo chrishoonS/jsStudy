@@ -3,26 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Number Game</title>
+    <title>Casino</title>
     <link rel="stylesheet" href="./syle.css">
 </head>
 <body>
-    <div class="game-wrap">
-        <h1 class="title">Random Number Game</h1>
-        <form class="form">
-            <div class="form__box">
-                <label for="scope-number" class="scope-number">Generate a number between 0 and</label>
-                <input type="number" name="scope-number" id="scope-number" required />
-            </div>
-            <div class="form__box">
-                <label for="my-number" class="my-number">Guess the number:</label>
-                <input type="number" name="my-number" id="my-number" required />
-            </div>
-        </form>
-        <p class="condition">
-        </p>
-        <p class="result"></p>
+    <h1 class="title">Random Number Game</h1>
+    <div class="form">
+        <div class="form__box">
+            <p class="range-text">
+                Generate a number between 0 and <span class="maxNum"></span>
+            </p>
+            <form class="range-form">
+                <input type="number" class="rangeInput" min="0" max="100">
+            </form>
+        </div>
+        <div class="form__box">
+            <p class="number-text">
+                Guess the number:
+            </p>
+            <form class="number-form">
+                <input type="number" class="numberInput">
+                <button type="button">Play!</button>
+            </form>
+        </div>
     </div>
+    <p class="choice hidden"></p>
+    <p class="result hidden"></p>
     <script src="./script.js"></script>
 </body>
 </html>
