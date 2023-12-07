@@ -17,7 +17,7 @@ function paintGreeting(username) {
   greeting.innerText = `Hello ${username}`;
   greeting.classList.remove(HIDDEN_CLASSNAME);
 }
-const savedUsername = localStorage.getItem("UNSERNAME_KEY");
+const savedUsername = localStorage.getItem(UNSERNAME_KEY);
 
 if(savedUsername === null) {
   //show the form
