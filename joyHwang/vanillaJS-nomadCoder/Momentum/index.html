@@ -5,25 +5,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Momentum</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="./syle.css">
 </head>
 
 <body>
-  <h2 id="clock">00:00:00</h2>
-  <form class="hidden" id="login-form">
-    <input required maxlength="15" type="text" placeholder="What is your name?">
-    <button type="submit">Log In</button>
-  </form>
-  <h1 id="greeting" class="hidden"></h1>
-  <form id="todo-form">
-    <input type="text" placeholder="Write a To Do and Press Enter" required>
-  </form>
-  <ul id="todo-list">
-  </ul>
-  <div id="quote">
-    <span></span>
-    <span></span>
-  </div>
+  <article class="momento">
+    <div class="box-wrap">
+      <!-- clock -->
+      <section class="section section--clock">
+        <div id="clock" class="animate__animated animate__bounceIn has-text-shadow">00:00:00</div>
+      </section>
+
+      <!-- personal-info -->
+      <section class="section section--personal-info">
+        <form class="hidden animate__animated animate__flash" id="login-form">
+          <input class="login-input has-text-shadow" required maxlength="15" type="text" placeholder="What is your name?">
+          <button class="login-button" type="submit">Log In</button>
+        </form>
+        <h1 id="greeting" class="hidden greeting-text has-text-shadow animate__animated animate__flash"></h1>
+      </section>
+    </div>
+
+    <!-- todo -->
+    <seciton class="section section--todo">
+      <form id="todo-form">
+        <input type="text" placeholder="To Do" required>
+      </form>
+      <ul id="todo-list">
+      </ul>
+    </seciton>
+
+    <!-- quote -->
+    <seciton class="section section--quote">
+      <p id="quote">
+        <span></span>
+        <span></span>
+      </p>
+    </seciton>
+  </article>
+
   <script src="./js/greeting.js"></script>
   <script src="./js/clock.js"></script>
   <script src="./js/quotes.js"></script>
