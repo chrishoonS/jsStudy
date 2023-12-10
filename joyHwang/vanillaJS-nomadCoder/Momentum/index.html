@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Momentum</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="./syle.css">
+</head>
+
+<body>
+  <article class="momento">
+    <div class="inner">
+      <!-- weather -->
+      <section class="section section--weather-info">
+        <p class="weather has-text-shadow">
+          <span></span>
+        </p>
+        <p class="city has-text-shadow">
+          <span></span>
+        </p>
+        <!-- <i class="weather-icon" aria-hidden="true"></i> -->
+      </section>
+      <div class="box-wrap">
+        <!-- clock -->
+        <section class="section section--clock">
+          <div id="clock" class="animate__animated animate__bounceIn has-text-shadow">00:00:00</div>
+        </section>
+
+        <!-- personal-info -->
+        <section class="section section--personal-info">
+          <form class="hidden animate__animated animate__flash" id="login-form">
+            <input class="login-input has-text-shadow" required maxlength="15" type="text"
+              placeholder="What is your name?">
+            <button class="login-button" type="submit">Log In</button>
+          </form>
+          <h1 id="greeting" class="hidden greeting-text has-text-shadow animate__animated animate__flash"></h1>
+        </section>
+      </div>
+
+      <!-- quote -->
+      <seciton class="section section--quote">
+        <div id="quote">
+          <span class="has-text-shadow"></span>
+          <span class="has-text-shadow"></span>
+        </div>
+      </seciton>
+
+      <!-- todo -->
+      <seciton class="section section--todo">
+        <form id="todo-form">
+          <input class="todo-input" type="text" placeholder="Type To Do" required>
+        </form>
+        <ul id="todo-list">
+        </ul>
+      </seciton>
+    </div>
+  </article>
+
+  <script src="./js/greeting.js"></script>
+  <script src="./js/clock.js"></script>
+  <script src="./js/quotes.js"></script>
+  <script src="./js/background.js"></script>
+  <script src="./js/todo.js"></script>
+  <script src="./js/weather.js"></script>
+</body>
+
+</html>
