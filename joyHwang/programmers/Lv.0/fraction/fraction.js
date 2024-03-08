@@ -10,9 +10,12 @@ let input = fs.readFileSync('joyHwang/programmers/Lv.0/test.txt').toString().spl
 
 
 //방법 1
+let fs = require('fs');
+let input = fs.readFileSync('joyHwang/programmers/Lv.0/fraction/test.txt').toString().split(' ');
+
 function solution(numer1, denom1, numer2, denom2) {
     //분자 구하기 (??왜)
-    let denum = denum1 * num2 + denum2 * num1;
+    let denum = numer1 * denom2 + numer2 * denom1;
     //분모 구하기
     let num = num1 * num2;
     let a = denum;
