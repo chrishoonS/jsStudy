@@ -18,7 +18,7 @@
 
 let fs = require('fs');
 // let input = fs.readFileSync('/dev/stdin').toString();
-let input = fs.readFileSync('joyHwang/baekjoon/step06/test.txt').toString(); 
+let input = fs.readFileSync('joyHwang/baekjoon/step06/test.txt').toString();
 const n = parseInt(input);
 let result = [];
 
