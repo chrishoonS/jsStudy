@@ -3,8 +3,9 @@
 
 function solution(money) {
     let price = 5500;
-    let answer = money % price;
-    // let answer = [];
+    let coffee = Math.floor(money / price); //몫
+    let balance = money % price; //나머지
+    let answer = [coffee,balance];
     return answer;
 }
-console.log(coffee)
+console.log(solution(5500))
