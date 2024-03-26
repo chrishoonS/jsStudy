@@ -3,11 +3,10 @@
 function solution(my_string) {
     let reverseText = my_string.toString().split(''); //typeof : object
     let result = reverseText.reverse().join(''); //typeof : string
-    // let result = reverseText.reverse();
+    //join()을 사용해서 split 되어있던 배열 객체를 string으로 바꿔줘야 정답!
+
     return result;
     
 }
 
 console.log(solution("bread"))
-
-//join()을 사용해서 split 되어있던 배열 객체를 string으로 바꿔줘야 정답!
