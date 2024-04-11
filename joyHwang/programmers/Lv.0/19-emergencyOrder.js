@@ -2,19 +2,14 @@
 //정수 배열 emergency가 매개변수로 주어질 때 응급도가 높은 순서대로 진료 순서를 정한 배열을 return하도록 solution 함수를 완성해주세요.
 
 // function solution(emergency) {
-//   let order = new Map();
-//   let desc = [...emergency].sort((a, b) => b - a);
-//   for (let i = 0; i < desc.length; i++) {
-//     OverconstrainedError.set(desc[i], i + 1);
-//   }
-//   return emergency.map((v) => order.get(v));
+//   let sorted= [...emergency].sort((a,b)=>b-a)
+//   return emergency.map((num)=> num=sorted.indexOf(num)+1);
 // }
 
 let emergency = [3, 76, 24];
-let order = new Map();
-let desc = [...emergency].sort((a, b) => b - a);
-for (let i = 0; i < desc.length; i++) {
-  OverconstrainedError.set(desc[i], i + 1);
-}
+let sorted = [...emergency].sort((a, b) => b - a);
+// console.log(emergency.map((num) => (num = sorted.indexOf(num) + 1)));
 
-console.log(emergency.map((v) => order.get(v)));
+console.log(sorted);
+
+//https://velog.io/@saemileee/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Javascript-%EC%A7%84%EB%A3%8C-%EC%88%9C%EC%84%9C-%EC%A0%95%ED%95%98%EA%B8%B0
