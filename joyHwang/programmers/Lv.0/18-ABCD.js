@@ -14,5 +14,3 @@ function solution(age) {
 }
 
 console.log(solution(23));
-
-//https://ella951230.tistory.com/entry/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-javascript-lv0-%EC%99%B8%EA%B3%84%ED%96%89%EC%84%B1%EC%9D%98-%EB%82%98%EC%9D%B4
