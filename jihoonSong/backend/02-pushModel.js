@@ -1,6 +1,13 @@
 // npm i ws
 // npm install -g websocket
+/* 테스트 방법
+ - 서버 기동 후 개발자도구 창 2개 띄움
+ - 콘솔창에 아래 코드 순서대로 입력
+  let ws = new WebSocket("ws://localhost:8080");
+  ws.onmessage = message => console.log(`${message.data}`);
+ - ws.send("입력하고 싶은 메시지") 를 입력하면 채팅기능 가능!
 
+*/ 
 
 const http = require("http");
 const WebSocketServer = require("websocket").server;
