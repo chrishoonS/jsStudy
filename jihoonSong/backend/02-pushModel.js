@@ -5,7 +5,7 @@
  - 콘솔창에 아래 코드 순서대로 입력
   let ws = new WebSocket("ws://localhost:8080");
   ws.onmessage = message => console.log(`${message.data}`);
- - ws.send("입력하고 싶은 메시지") 를 입력하면 채팅기능 가능!
+ - ws.send("입력하고 싶은 메시지") 를 입력하면 채팅기능 가능!   
 
 */ 
 
